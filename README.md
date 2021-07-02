@@ -1,3 +1,21 @@
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
 <center> <h1> Codes for composable block solver methodologies for the four-field double porosity/permeability model </h1> </center>
 
 Codes for 
@@ -12,3 +30,145 @@ Codes for
 This repository provides computer codes for two recently proposed composable block solver methodologies to solve the discrete systems that arise from double porosity/permeability (DPP) model. 
 Time-Accuracy-Size (TAS) spectrum performance model is employed to (i) demonstrate that solvers are scalable in both the parallel and algorithmic sense (ii) compare the performance of three different finite element discretizations (classical mixed formulation with H(div) elements, stabilized continuous Galerkin mixed formulation, and stabilized discontinuous Galerkin mixed formulation) for the DPP model. More details are discussed in the paper.
 
+<h2> Large scale problems in geophysical systems </h2>
+The <a href="#large_images"> problems that arise in subsurface modeling</a> and other applications involving flow through porous media are large-scale, multiphysics, and multiscale. These problems cannot be solved on a standard desktop or by employing direct solvers; as such a computation will be prohibitively expensive. 
+
+<div class="row" id="large_images">
+  <div class="column">
+  <center> Karst network </center>
+    <img src="Figures/Large_scale/Karst network.jpg" alt="Karst network" style="width:100%">
+  </div>
+  <div class="column">
+  <center> Geothermal energy</center>
+    <img src="Figures/Large_scale/Geothermal_energies.jpg" alt="Geothermal energies" style="width:100%">
+  </div>
+  <div class="column">
+  <center>Carbon capture and storage</center>
+    <img src="Figures/Large_scale/C02_Sequestration.png" alt="Carbon capture and storage" style="width:100%">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+  <center>Hydrocarbon recovery</center>
+    <img src="Figures/Large_scale/EOR2.png" alt="Hydrocarbon recovery" style="width:100%">
+  </div>
+  <div class="column">
+  <center>contaminant hydrology</center>
+    <img src="Figures/Large_scale/Contaminant_hydrology2.png" alt="contaminant hydrology" style="width:100%">
+  </div>
+  <div class="column">
+  <center>Fuel cell</center>
+    <img src="Figures/Large_scale/Li_ion_final.svg" alt="Fuel cell" style="width:100%">
+  </div>
+</div>
+
+## <abbr title='Understanding how to optimally utilize the computational and memory resources on modern hardware architecture is vital to achieving High Performance Computing'> High performance computing (HPC)</abbr>
+Large-scale problems from subsurface modeling are routinely tackled using 
+ scalable HPC techniques, efficient parallel computing tools, and advanced solvers and preconditioners.
+
+## Various finite elements (FEs) for solving subsurface problems
+<details open><summary> <big> <abbr title='Classes of H(div) finite element discretization such as RT, RTN, BDM, BDFM'><b>H(div) FE</b></abbr></big>
+</summary>
+Classical mixed formulation such as RT, RTN, BDM, and BDFM that degree-of-freedoms are not associated with vertices.
+It is frequently used in subsurface modeling. <br>
+Features:
+<ul>
+<li>
+<font color=blue> Low degree-of-freedom per element </font>
+</li>
+<li>
+<font color=blue>Can handle highly heterogeneous domains</font>
+</li>
+<li>
+<font color=blue>Preserves local mass balance</font>
+</li>
+<li>
+<font color=red>Give rise to indefinite linear system</font>
+</li>
+<li>
+<font color=red>Fails under 3D meshes with non-constant Jacobians</font>
+</li>
+</ul>
+
+![](./Figures/Hdiv.svg)
+</details>
+
+<details open><summary> <big> <abbr title='Stabilized mixed continuous Galerkin formulation (CG-VMS)'><b>CG-VMS FE</b></abbr></big>
+</summary>
+This formulation is know as THE finite element method (based on continuous basis functions) that is combined with 
+variational multiscale (VMS) method.<br>
+Features:
+<ul>
+<li>
+<font color=blue>Flexible interpolation order for primary unknowns</font>
+</li>
+<li>
+<font color=blue>High order accuracy</font>
+</li>
+<li>
+<font color=red>Inability to handle highly heterogeneous domains</font>
+</li>
+<li>
+<font color=red>Poor local mass balance conservation</font>
+</li>
+</ul>
+
+![](./Figures/CG-VMS.svg)
+</details>
+<details open><summary> <big> <abbr title='Stabilized mixed discontinuous Galerkin formulation (DG-VMS)'><b>DG-VMS FE</b></abbr></big>
+</summary>
+Inherits attractive features of both FE and FV methods by allowing discontinuous basis functions <br>
+Features:
+<ul>
+<li>
+<font color=blue>Flexible interpolation order for primary unknowns </font>
+</li>
+<li>
+<font color=blue>Easily handle 3D non-constant Jacobian elements and does not suffer from grid distortion</font>
+</li>
+<li>
+<font color=blue>Does not suffer from numerical instabilities (due to fluxes)</font>
+</li>
+<li>
+<font color=blue>Can handle highly heterogeneous domains</font>
+</li>
+<li>
+<font color=blue>Preserves local mass balance</font>
+</li>
+<li>
+<font color=red>Requires penalty parameters that are problem dependent</font>
+</li>
+<li>
+<font color=red>High degrees-of-freedom per element</font>
+</li>
+</ul>
+
+![](./Figures/DG-VMS.svg)
+</details>
+<details open><summary> <big> <abbr title='Hybridizable discontinuous Galerkin formulation (HDG)'><b>HDG FE</b></abbr></big>
+</summary>
+Inherits attractive features of both CG and DG methods by employing classic static condensation and local post-processing techniques. <br>
+Features:
+<ul>
+<li>
+<font color=blue>Low degrees-of-freedom</font>
+</li>
+<li>
+<font color=blue>Can easily handle diffusion- and convection-dominated problems</font>
+</li>
+<li>
+<font color=blue>Scales well for higher polynomial orders</font>
+</li>
+<li>
+<font color=blue>Preserves local mass balance</font>
+</li>
+<li>
+<font color=red>Higher setup-up cost</font>
+</li>
+</ul>
+
+![](./Figures/HDG_schematic.svg)
+</details>
+
+## Solver methodologies
+Two different precondditioning strategies are implemented seamlessly using the existing [PETSc’s composable solver](https://www.mcs.anl.gov/petsc/documentation/linearsolvertable.html) options. The corresponding codes and PETSc command-line options can be found [here](./Codes/).
