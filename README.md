@@ -34,45 +34,45 @@ Time-Accuracy-Size (TAS) spectrum performance model is employed to (i) demonstra
 The <a href="#large_images"> problems that arise in subsurface modeling</a> and other applications involving flow through porous media are large-scale, multiphysics, and multiscale. These problems cannot be solved on a standard desktop or by employing direct solvers; as such a computation will be prohibitively expensive. 
 </br>
 
-<p align="middle" id="large_images">
-  <img src="Figures/Large_scale/Karst network.jpg" width="150" title="Angular" />
-  <img src="Figures/Large_scale/Geothermal_energies.jpg" width="150" /> 
-  <img src="Figures/Large_scale/C02_Sequestration.png" width="150" />
-</p>
-<p align="middle">
-  <img src="Figures/Large_scale/EOR2.png" width="150" />
-  <img src="Figures/Large_scale/Contaminant_hydrology2.png" width="150" /> 
-  <img src="Figures/Large_scale/Li_ion_final.svg" width="150" />
-</p>
+<!-- <p align="middle" id="large_images"> -->
+<!--   <img src="Figures/Large_scale/Karst network.jpg" width="150" title="Angular" /> -->
+<!--   <img src="Figures/Large_scale/Geothermal_energies.jpg" width="150" /> --> 
+<!--   <img src="Figures/Large_scale/C02_Sequestration.png" width="150" /> -->
+<!-- </p> -->
+<!-- <p align="middle"> -->
+<!--   <img src="Figures/Large_scale/EOR2.png" width="150" /> -->
+<!--   <img src="Figures/Large_scale/Contaminant_hydrology2.png" width="150" /> --> 
+<!--   <img src="Figures/Large_scale/Li_ion_final.svg" width="150" /> -->
+<!-- </p> -->
 
-<!-- <div class="row" id="large_images"> -->
-<!--   <div class="column"> -->
-<!--   <center> Karst network </center> -->
-<!--     <img src="Figures/Large_scale/Karst network.jpg" alt="Karst network" style="width:100%"> -->
-<!--   </div> -->
-<!--   <div class="column"> -->
-<!--   <center> Geothermal energy</center> -->
-<!--     <img src="Figures/Large_scale/Geothermal_energies.jpg" alt="Geothermal energies" style="width:100%"> -->
-<!--   </div> -->
-<!--   <div class="column"> -->
-<!--   <center>Carbon capture and storage</center> -->
-<!--     <img src="Figures/Large_scale/C02_Sequestration.png" alt="Carbon capture and storage" style="width:100%"> -->
-<!--   </div> -->
-<!-- </div> -->
-<!-- <div class="row"> -->
-<!--   <div class="column"> -->
-<!--   <center>Hydrocarbon recovery</center> -->
-<!--     <img src="Figures/Large_scale/EOR2.png" alt="Hydrocarbon recovery" style="width:100%"> -->
-<!--   </div> -->
-<!--   <div class="column"> -->
-<!--   <center>contaminant hydrology</center> -->
-<!--     <img src="Figures/Large_scale/Contaminant_hydrology2.png" alt="contaminant hydrology" style="width:100%"> -->
-<!--   </div> -->
-<!--   <div class="column"> -->
-<!--   <center>Fuel cell</center> -->
-<!--     <img src="Figures/Large_scale/Li_ion_final.svg" alt="Fuel cell" style="width:100%"> -->
-<!--   </div> -->
-<!-- </div> -->
+<div class="row" id="large_images">
+  <div class="column">
+  <center> Karst network </center>
+    <img src="Figures/Large_scale/Karst network.jpg" alt="Karst network" style="width:33.3%">
+  </div>
+  <div class="column">
+  <center> Geothermal energy</center>
+    <img src="Figures/Large_scale/Geothermal_energies.jpg" alt="Geothermal energies" style="width:33.3%">
+  </div>
+  <div class="column">
+  <center>Carbon capture and storage</center>
+    <img src="Figures/Large_scale/C02_Sequestration.png" alt="Carbon capture and storage" style="width:33.3%">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+  <center>Hydrocarbon recovery</center>
+    <img src="Figures/Large_scale/EOR2.png" alt="Hydrocarbon recovery" style="width:100%">
+  </div>
+  <div class="column">
+  <center>contaminant hydrology</center>
+    <img src="Figures/Large_scale/Contaminant_hydrology2.png" alt="contaminant hydrology" style="width:100%">
+  </div>
+  <div class="column">
+  <center>Fuel cell</center>
+    <img src="Figures/Large_scale/Li_ion_final.svg" alt="Fuel cell" style="width:100%">
+  </div>
+</div>
 
 ## <abbr title='Understanding how to optimally utilize the computational and memory resources on modern hardware architecture is vital to achieving High Performance Computing'> High performance computing (HPC)</abbr>
 Large-scale problems from subsurface modeling are routinely tackled using 
