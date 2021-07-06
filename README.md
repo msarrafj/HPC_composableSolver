@@ -36,16 +36,31 @@ The <a href="#large_images"> problems that arise in subsurface modeling</a> and 
 
 <p align="middle" id="large_images">
 <Figure>
- <figcaption>Caption goes here</figcaption> 
+ <figcaption>Karst network</figcaption> 
   <img src="Figures/Large_scale/Karst network.jpg" width="150" title="Angular" />
 </Figure>
+<Figure>
+ <figcaption> Geothermal energy</figcaption> 
   <img src="Figures/Large_scale/Geothermal_energies.jpg" width="150" /> 
+</Figure>
+<Figure>
+ <figcaption>Carbon capture and storage</figcaption> 
   <img src="Figures/Large_scale/C02_Sequestration.png" width="150" />
+</Figure>
 </p>
 <p align="middle">
+<Figure>
+ <figcaption>Hydrocarbon recovery</figcaption> 
   <img src="Figures/Large_scale/EOR2.png" width="150" />
+</Figure>
+<Figure>
+ <figcaption>Contaminant hydrology</figcaption> 
   <img src="Figures/Large_scale/Contaminant_hydrology2.png" width="150" /> 
+</Figure>
+<Figure>
+ <figcaption>Fuel cell</figcaption> 
   <img src="Figures/Large_scale/Li_ion_final.svg" width="150" />
+</Figure>
 </p>
 
 <!-- <div class="row" id="large_images"> -->
