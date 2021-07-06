@@ -34,30 +34,31 @@ Time-Accuracy-Size (TAS) spectrum performance model is employed to (i) demonstra
 The <a href="#large_images"> problems that arise in subsurface modeling</a> and other applications involving flow through porous media are large-scale, multiphysics, and multiscale. These problems cannot be solved on a standard desktop or by employing direct solvers; as such a computation will be prohibitively expensive. 
 </br>
 
-<p align="middle" id="large_images">
-<Figure>
- <figcaption>Karst network</figcaption> 
-  <img src="Figures/Large_scale/Karst network.jpg" width="150" title="Angular" />
-</Figure>
-<Figure>
- <figcaption> Geothermal energy</figcaption> 
-  <img src="Figures/Large_scale/Geothermal_energies.jpg" width="150" /> 
-</Figure>
-<Figure>
- <figcaption>Carbon capture and storage</figcaption> 
-  <img src="Figures/Large_scale/C02_Sequestration.png" width="150" />
-</Figure>
-</p>
-<p align="middle">
-<Figure>
- <figcaption>Hydrocarbon recovery</figcaption> 
-  <img src="Figures/Large_scale/EOR2.png" width="150" />
- <figcaption>Contaminant hydrology</figcaption> 
-  <img src="Figures/Large_scale/Contaminant_hydrology2.png" width="150" /> 
- <figcaption>Fuel cell</figcaption> 
-  <img src="Figures/Large_scale/Li_ion_final.svg" width="150" />
-</Figure>
-</p>
+<table class="tab">
+<tr>
+ <td>Karst network</td> 
+ <td> Geothermal energy</td> 
+ <td>Carbon capture and storage</td> 
+ <td>Hydrocarbon recovery</td> 
+ <td>Contaminant hydrology</td> 
+ <td>Fuel cell</td> 
+</tr>
+<tr>
+  <td> <img src="Figures/Large_scale/Karst network.jpg" width="150" title="Angular" /></td>
+  <td> <img src="Figures/Large_scale/Geothermal_energies.jpg" width="150" />          </td>
+  <td> <img src="Figures/Large_scale/C02_Sequestration.png" width="150" />            </td>
+  <td> <img src="Figures/Large_scale/EOR2.png" width="150" />                         </td>
+  <td> <img src="Figures/Large_scale/Contaminant_hydrology2.png" width="150" />       </td>
+  <td> <img src="Figures/Large_scale/Li_ion_final.svg" width="150" />                 </td>
+</tr>
+</table>
+
+
+<style>
+.tab {border-collapse:collapse;}
+.tab .first {border-bottom:1px solid #EEE;}
+.tab .second {border-top:1px solid #CCC;box-shadow: inset 0 1px 0 #CCC;}​
+</style>
 
 <!-- <div class="row" id="large_images"> -->
 <!--   <div class="column"> -->
