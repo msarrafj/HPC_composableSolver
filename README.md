@@ -36,8 +36,8 @@ The <a href="#large_images"> problems that arise in subsurface modeling</a> and 
 
 <p align="middle" id="large_images">
 <Figure>
-  <img src="Figures/Large_scale/Karst network.jpg" width="150" title="Angular" />
  <figcaption>Caption goes here</figcaption> 
+  <img src="Figures/Large_scale/Karst network.jpg" width="150" title="Angular" />
 </Figure>
   <img src="Figures/Large_scale/Geothermal_energies.jpg" width="150" /> 
   <img src="Figures/Large_scale/C02_Sequestration.png" width="150" />
