@@ -52,12 +52,8 @@ The <a href="#large_images"> problems that arise in subsurface modeling</a> and 
 <Figure>
  <figcaption>Hydrocarbon recovery</figcaption> 
   <img src="Figures/Large_scale/EOR2.png" width="150" />
-</Figure>
-<Figure>
  <figcaption>Contaminant hydrology</figcaption> 
   <img src="Figures/Large_scale/Contaminant_hydrology2.png" width="150" /> 
-</Figure>
-<Figure>
  <figcaption>Fuel cell</figcaption> 
   <img src="Figures/Large_scale/Li_ion_final.svg" width="150" />
 </Figure>
