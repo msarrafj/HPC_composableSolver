@@ -35,14 +35,14 @@ The <a href="#large_images"> problems that arise in subsurface modeling</a> and 
 </br>
 
 <p align="middle" id="large_images">
-  <img src="Figures/Large_scale/Karst network.jpg" width="200" />
-  <img src="Figures/Large_scale/Geothermal_energies.jpg" width="200" /> 
-  <img src="Figures/Large_scale/C02_Sequestration.png" width="200" />
+  <img src="Figures/Large_scale/Karst network.jpg" width="150" />
+  <img src="Figures/Large_scale/Geothermal_energies.jpg" width="150" /> 
+  <img src="Figures/Large_scale/C02_Sequestration.png" width="150" />
 </p>
 <p align="middle">
-  <img src="Figures/Large_scale/EOR2.png" width="200" />
-  <img src="Figures/Large_scale/contaminant_hydrology2.png" width="200" /> 
-  <img src="Figures/Large_scale/Li_ion_final.svg" width="200" />
+  <img src="Figures/Large_scale/EOR2.png" width="150" />
+  <img src="Figures/Large_scale/Contaminant_hydrology2.png" width="150" /> 
+  <img src="Figures/Large_scale/Li_ion_final.svg" width="150" />
 </p>
 
 <!-- <div class="row" id="large_images"> -->
