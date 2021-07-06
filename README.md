@@ -34,6 +34,8 @@ Time-Accuracy-Size (TAS) spectrum performance model is employed to (i) demonstra
 The <a href="#large_images"> problems that arise in subsurface modeling</a> and other applications involving flow through porous media are large-scale, multiphysics, and multiscale. These problems cannot be solved on a standard desktop or by employing direct solvers; as such a computation will be prohibitively expensive. 
 </br>
 
+![alt-text-1](Figures/Large_scale/Geothermal_energies.jpg  "title-1") ![alt-text-2](Figures/Large_scale/Geothermal_energies.jpg "title-2") ![alt-text-2](Figures/Large_scale/Geothermal_energies.jpg "title-2")
+
 <p align="middle" id="large_images">
   <img src="Figures/Large_scale/Karst network.jpg" width="150" />
   <img src="Figures/Large_scale/Geothermal_energies.jpg" width="150" /> 
