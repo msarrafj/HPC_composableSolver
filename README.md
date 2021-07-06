@@ -66,6 +66,14 @@ The <a href="#large_images"> problems that arise in subsurface modeling</a> and 
 Large-scale problems from subsurface modeling are routinely tackled using 
  scalable HPC techniques, efficient parallel computing tools, and advanced solvers and preconditioners.
 
+<br>
+
+![](./Figures/Large_scale/HPC-diagram.svg)
+Figure shows the different levels of hardware of a cluster/supercomputer, together with the associated memory latency and size, debugging tools, as well as the type of parallelism to exploit them. The numbers are expressed in terms of orders of magnitude and pretend to be only heuristic as they are system dependent.
+
+
+![](./Figures/Large_scale/Graph.svg)
+Figure shows architecture of a computing cluster with n nodes. The zoom-in view illustrates the modern architecture of a 4-core processor/node.
 ## Various finite elements (FEs) for solving subsurface problems
 <details open><summary> <big> <abbr title='Classes of H(div) finite element discretization such as RT, RTN, BDM, BDFM'><b>H(div) FE</b></abbr></big>
 </summary>
@@ -171,4 +179,38 @@ Features:
 </details>
 
 ## Solver methodologies
-Two different precondditioning strategies are implemented seamlessly using the existing [PETSc’s composable solver](https://www.mcs.anl.gov/petsc/documentation/linearsolvertable.html) options. The corresponding codes and PETSc command-line options can be found [here](./Codes/).
+Different precondditioning strategies (e.g., fieldsplit and scalesplit) are implemented seamlessly using the existing [PETSc’s composable solver](https://www.mcs.anl.gov/petsc/documentation/linearsolvertable.html) options. The corresponding codes and PETSc command-line options can be found [here](./Codes/).
+
+
+![](./Figures/Performance.svg)
+
+Time-accuracy-size performance model is employed to understand how software implementations, hardware architectures, and
+various numerical discretizations (e.g., CG-VMS, DG-VMS, RT0) affect the performance of a solver.
+
+## Project tree
+```
+./Codes
+├── 2D
+│   ├── 2D_composable_solver_CG.py
+│   ├── 2D_composable_solver_DG.py
+│   ├── 2D_composable_solver_RT0.py
+│   ├── Bash
+│   │   └── Bash.sh
+│   └── Strongscaling
+├── 3D
+│   ├── 3D_composable_solvers_CG.py
+│   ├── 3D_composable_solvers_DG.py
+│   ├── 3D_composable_solvers_RT0.py
+│   ├── Bash
+│   │   └── Bash.sh
+│   └── Strongscaling
+│       ├── Same_dof
+│       │   └── StrongBash.sh
+│       └── Same_hsize
+│           └── StrongBash.sh
+└── PETSc_command_line
+
+8 directories, 11 files
+```
+
+
