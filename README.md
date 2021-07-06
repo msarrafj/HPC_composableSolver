@@ -33,7 +33,7 @@ Time-Accuracy-Size (TAS) spectrum performance model is employed to (i) demonstra
 <h2> Large scale problems in geophysical systems </h2>
 The <a href="#large_images"> problems that arise in subsurface modeling</a> and other applications involving flow through porous media are large-scale, multiphysics, and multiscale. These problems cannot be solved on a standard desktop or by employing direct solvers; as such a computation will be prohibitively expensive. 
 
-<p float="midlle">
+<p align="midlle">
   <img src="Figures/Large_scale/Karst network.jpg" width="100" />
   <img src="Figures/Large_scale/Geothermal_energies.jpg" width="100" /> 
   <img src="Figures/Large_scale/C02_Sequestration.png" width="100" />
