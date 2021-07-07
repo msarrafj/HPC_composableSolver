@@ -1,21 +1,3 @@
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-</style>
 <center> <h1> Codes for composable block solver methodologies for the four-field double porosity/permeability model </h1> </center>
 
 Codes for 
@@ -240,4 +222,9 @@ various numerical discretizations (e.g., CG-VMS, DG-VMS, RT0) affect the perform
 8 directories, 11 files
 ```
 
+
+## Related links
+
+My [poster presentation](./Figures/Poster_for_SIAM_CSE19.pdf) at SIAM Conference on Computer Science and Engineering, Spokane, 2019.
+My [talk](https://www.pathlms.com/siam/courses/11267/sections/14637/video_presentations/128789) at SIAM Conference on Mathematical and Computational Issues in the Geosciences, Houston, TX,2019.
 
