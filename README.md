@@ -231,7 +231,7 @@ My [poster presentation](./Figures/Poster_for_SIAM_CSE19.pdf) at SIAM Conference
 </li>
 <li>
 
-My [talk](https://www.pathlms.com/siam/courses/11267/sections/14637/video_presentations/128789) at SIAM Conference on Mathematical and Computational Issues in the Geosciences, Houston, TX,2019.
+My [talk](https://www.pathlms.com/siam/courses/11267/sections/14637/video_presentations/128789) at SIAM Conference on Mathematical and Computational Issues in the Geosciences, Houston, TX, 2019.
 </li>
 </ul>
 
