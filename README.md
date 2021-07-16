@@ -82,7 +82,7 @@ Figure shows the different levels of hardware of a cluster/supercomputer, togeth
 
 
 ![](./Figures/Large_scale/Graph.svg)
-Figure shows architecture of a computing cluster with n nodes. The zoom-in view illustrates the modern architecture of a 4-core processor/node.
+Figure shows architecture of a computing cluster with 4 nodes. The zoom-in view illustrates the modern architecture of a n-core processor/node.
 ## Various finite elements (FEs) for solving subsurface problems
 <details open><summary> <big> <abbr title='Classes of H(div) finite element discretization such as RT, RTN, BDM, BDFM'><b>H(div) FE</b></abbr></big>
 </summary>
@@ -161,6 +161,7 @@ Features:
 </ul>
 
 ![](./Figures/DG-VMS.svg)
+More details on DG-VMS formulation is accessible [here](https://github.com/msarrafj/Double_Porosity_Permeability/blob/9ed50997cfc32b7bc0659cfdc0a461eeb27b965d/README.md).
 </details>
 <details open><summary> <big> <abbr title='Hybridizable discontinuous Galerkin formulation (HDG)'><b>HDG FE</b></abbr></big>
 </summary>
