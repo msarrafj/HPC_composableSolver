@@ -36,11 +36,11 @@ The <a href="#large_images"> problems that arise in subsurface modeling</a> and 
 </table>
 
 
-<style>
-.tab {border-collapse:collapse;}
-.tab .first {border-bottom:1px solid #EEE;}
-.tab .second {border-top:1px solid #CCC;box-shadow: inset 0 1px 0 #CCC;}​
-</style>
+<!-- <style> -->
+<!-- .tab {border-collapse:collapse;} -->
+<!-- .tab .first {border-bottom:1px solid #EEE;} -->
+<!-- .tab .second {border-top:1px solid #CCC;box-shadow: inset 0 1px 0 #CCC;}​ -->
+<!-- </style> -->
 
 <!-- <div class="row" id="large_images"> -->
 <!--   <div class="column"> -->
